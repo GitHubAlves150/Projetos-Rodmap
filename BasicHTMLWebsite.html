@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BasicWebsite</title>
+    <style>
+        header {
+            border: 2px solid black;
+
+            flex-flow: column wrap;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        header>div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header>div>nav>a {
+            /*border: 2px dotted black;*/
+            background-color: rgb(188, 185, 185);
+            color: white;
+            padding: 10px;
+            border-radius: 3px;
+            margin: 10px;
+            text-decoration: none;
+            text-align: center;
+            flex-flow: row wrap;
+        }
+
+        header>p.FrontDEV {
+            border: 2px dotted black;
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 0px;
+        }
+
+        header>p.subtitle {
+            border: 2px dotted black;
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        header>div.painel {
+            border: 2px dotted black;
+        }
+
+        header>h1 {
+            border: 2px dotted black;
+            flex: 0 0 200px;
+        }
+
+        header>div>nav>a:hover {
+            color: rgb(253, 249, 249);
+            background-color: black;
+        }
+
+        table.quadro,
+        th {
+            border: 2px solid rgb(137, 135, 135);
+            margin: 4px;
+            width: 900px;
+            flex-flow: row wrap;
+        }
+
+        footer {
+            border: 1px dotted black;
+        }
+
+        footer>div.conteiner {
+            border: 1px dotted black;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer>div>div.box {
+            border: 1px dotted black;
+            background-color: rgb(191, 189, 189);
+            padding: 10px;
+            border-radius: 10px;
+            flex-flow: row wrap;
+            align-items: center;
+            
+        }
+
+        .adress{
+            background-color: aqua;
+           
+            align-items: center;
+        }
+    </style>
+    </title>
+</head>
+
+<body>
+    <header>
+
+        <div>
+            <h1>Lucas Alves</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Projects</a>
+                <a href="#">Articles</a>
+                <a href="#">Contect</a>
+            </nav>
+        </div>
+
+        <p class="FrontDEV">
+            Front Developer
+        </p>
+        <p class="subtitle">
+            html only with proper layout, no styling
+        </p>
+    </header>
+
+    <main>
+        <section>
+            <table>
+                <tr>
+                    <th class="quadro">
+                        <h1>Projects</h1>
+                        <h2>HTML Only Portifolio</h2>
+                        <ul>
+                            <li>Calculator</li>
+                            <li>Quiz App</li>
+                            <li>CountDown Timer</li>
+                            <li>Product Upcoming Page</li>
+                        </ul>
+                    </th>
+                    <th class="quadro">
+                        <h1>Work Experience</h1>
+                        <h2>Roadmap.sh</h2>
+                        <h3>Solved all the frontend projects</h3>
+                        <a href="https://github.com/GitHubAlves150">visit my GitHub Profile</a>
+                        <h2>OpenSource Work</h2>
+                        <p>
+                            Contribuited to 50 OpenSource projects. Made my own projects with 200 GitHub Stars
+                        </p>
+                        <a href="https://github.com/GitHubAlves150">visit my GitHub Profile</a>
+
+                    </th>
+                    <th class="quadro">
+                        <h1>Education</h1>
+                        <p>
+                            Graduated with 3.76 out os 4 CGPA.Won Acme Hackathon.
+                            Organized 30 sessions. <br>
+                            Courses i took:
+                        <ul>
+                            <li>
+                                Object Oriented Programming
+                                Data Structres and Algorithms
+                                Web Enginnering
+                                Artificial intelligence
+                                Human Computer Integration
+                                Computer graphics
+                                Databases Managements Systems
+                                Distributed Database Systems
+                                Discreet Mathematics
+                            </li>
+                        </ul>
+
+                        </p>
+                    </th>
+                </tr>
+
+            </table>
+        </section>
+
+    </main>
+    <footer>
+        <h1>Reviews from my Teachers</h1>
+        <div class="conteiner">
+            <div class="box">
+                <p>
+                    Jhon doe was a briliant student; always stood out with his assignments. <br>
+                <h6>Jane Doe</h6> <br>
+                <h6>Assistence Professor</h6>
+                </p>
+            </div>
+
+
+            <div class="box">
+                <p>
+                    Jhon doe was a briliant student; always stood out with his assignments. <br>
+                <h6>Jane Doe</h6> <br>
+                <h6>Assistence Professor</h6>
+                </p>
+            </div>
+            <div class="box">
+                <p>
+                    Jhon doe was a briliant student; always stood out with his assignments. <br>
+                <h6>Jane Doe</h6> <br>
+                <h6>Assistence Professor</h6>
+                </p>
+            </div>
+            
+        </div>
+        <address>@lucasalves</address>
+    </footer>
+</body>
+
+</html>
