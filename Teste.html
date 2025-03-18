@@ -1,45 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div.conteiner {
+            background-color: orange;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: aqua;
+
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px;            
+        }
+
+        div#cxA{flex-shrink: 1; flex-grow: 0; flex-basis: 150px;}
+        div#cxB{flex-shrink: 1; flex-grow: 1; flex-basis: 10;}
+        div#cxC{flex-shrink: 1; flex-grow: 0; flex-basis: 0;}
+        div#cxD{flex-shrink: 1; flex-grow: 0; flex-basis: 0;}
+        div#cxE{flex-shrink: 1; flex-grow: 0; flex-basis: 0;}
+        div#cxF{flex-shrink: 1; flex-grow: 0; flex-basis: 0;}
+        div#cxG{flex-shrink: ; flex-grow: 4; flex-basis: 0;}
+    </style>
 </head>
-<style>
-  div.conteiner{
-    background-color: orange;
-    display: flex;
-    flex-flow: row wrap;
 
-  }
-  div.itemA{
-    background-color: rgb(161, 238, 238);
-
-    border: 1px solid black;
-    flex: initial;
-  }
-  div.itemB{
-    background-color: rgb(36, 176, 176);
-
-    border: 1px solid black;
-    flex: 1 1 auto;
-  }
-  div.itemC{
-    background-color: rgb(23, 119, 119);
-
-    border: 1px solid black;
-    flex: 1 1 auto; /*GSB*/
-  }
-</style>
 <body>
-    
-<div class="conteiner">
-  <div class="itemA">A fdfdsfdsfsd</div>
-  <div class="itemB">B</div>
-  <div class="itemC">C</div>
+    <div class="conteiner">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        
+        <div class="item" id="cxG">G</div>
 
-</div>
-
+    </div>
 
 </body>
+
 </html>
