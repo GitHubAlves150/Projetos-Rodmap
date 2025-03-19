@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            background-color: rgb(230, 226, 226);
+        }
+
+        a {
+            color: rgb(187, 184, 184);
+            text-decoration: none;
+
+        }
+
+        .especial::after, .especial::before { /*pseudo elemento*/
+            content: ' =>';
+        }
+
+
+        a:hover {
+            color: red;
+        }
+
+        /*a:visited{
+            color: green;
+        }*/
+        a:active {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li class="especial"><a href="https://github.com/" >Repositorio GitHub</a></li>
+        <li><a href="https://www.youtube.com/watch?v=SUV7epfghaE&t=1770s">Canal Do youtube</a></li>
+        <li><a href="https://github.com/">Site do CursoemVideo</a></li>
+        <li><a
+                href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiigOO8xZaMAxWoRUgAHZfHLpQYABAPGgJjZQ&co=1&gclid=Cj0KCQjw1um-BhDtARIsABjU5x4q9oE7nZ4QsOSv2Wqzf1_5IpsnVqJlv6uqxeyv-2OKv3gsDH09q6UaAkWoEALw_wcB&ohost=www.google.com&cid=CAESVuD2sZcmqLveIXtyo1-SsEnlJWmnODMqCgABdH-T1ioZAgEbbsNevL2x2K01drRIRwi5HO7thClND1KK74I8k5CscG72fhSBrIgXNRXagcZj7X_4f_S1&sig=AOD64_2xLLkDRmsfNdo31Xu2VuHWvfPyyQ&q&adurl&ved=2ahUKEwikkN68xZaMAxXzLbkGHQd-MPUQ0Qx6BAgKEAE">Site
+                Asus</a></li>
+
+    </ul>
+</body>
+
+</html>
