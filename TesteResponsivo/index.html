@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        body {
+            background-color: rgb(168, 166, 166);
+        }
+
+        main {
+            background-color: rgb(255, 251, 251);
+            padding: 20px;
+            border-radius: 8px;
+            /*width: 800px;/*Posso usar o width para limitar o maximo da tela que vai ocupar*/
+
+            min-width: 320px;
+            max-width: 800px;
+            margin: auto;
+            /*deixar ao centro*/
+
+        }
+
+        img {
+            width: 100%;
+            /*Deixa sempre 100% em qualquer tela*/
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Teste de responsividade</h1>
+        <p>
+            O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o
+            texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto
+            para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a
+            tipografia electrónica, mantendo-se essencialmente inalterada. Foi popularizada nos anos 60 com a
+            disponibilização das folhas de Letraset, que continham passagens com Lorem Ipsum, e mais recentemente com os
+            programas de publicação como o Aldus PageMaker que incluem versões do Lorem Ipsum.
+        </p>
+        <picture>
+            <source media="(max-width:800px)"
+                srcset="../DesafioHTML/imagens/irina-blok-pq.jpg">
+            <img src="../DesafioHTML/imagens/irina-blok.jpg" alt="Foto da Irina Block">
+        </picture>
+        <p>
+            O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o
+            texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto
+            para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a
+            tipografia electrónica, mantendo-se essencialmente inalterada. Foi popularizada nos anos 60 com a
+            disponibilização das folhas de Letraset, que continham passagens com Lorem Ipsum, e mais recentemente com os
+            programas de publicação como o Aldus PageMaker que incluem versões do Lorem Ipsum.
+        </p>
+    </main>
+</body>
+
+</html>
