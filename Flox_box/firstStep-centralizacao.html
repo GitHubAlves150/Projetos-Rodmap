@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box-cenralizado</title>
+    <style>
+        body{
+            background-color: rgb(199, 140, 29);
+        }
+        main{
+            background-color: gray;
+            height: 90vh;/*90% da tela na horizontal*/
+            width: 90vw;/*90% da tela na vertical*/
+/*==========para centralizar======================*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: row wrap;
+/*==========Fim para centralizar======================*/
+        }
+        section{
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    
+    <main>
+        <section>
+            <h1>
+                Titulo
+            </h1>
+        </section>
+    </main>
+</body>
+
+</html>
