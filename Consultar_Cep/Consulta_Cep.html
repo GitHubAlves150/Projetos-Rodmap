@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de CEP</title>
+</head>
+<body>
+    <h1>Consulta de CEP</h1>
+    <input type="text" id="cep" placeholder="Digite o CEP sem hífen">
+    <button id="consultar">Consultar</button>
+    <div id="endereco"></div>
+
+    <script>
+        document.getElementById('consultar').addEventListener('click', () => {
+            const cep = document.getElementById('cep').value;
+            fetch(`https://viacep.com.br/ws/${cep}/json/`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.erro) {
+                        document.getElementById('endereco').textContent = 'CEP não encontrado';
+                    } else {
+                        document.getElementById('endereco').innerHTML = `
+                            <p>Endereço: ${data.logradouro}</p>
+                            <p>Bairro: ${data.bairro}</p>
+                            <p>Cidade: ${data.localidade}</p>
+                            <p>UF: ${data.uf}</p>
+                        `;
+                    }
+                })
+                .catch(error => console.error('Erro:', error));
+        });
+    </script>
+</body>
+</html>
