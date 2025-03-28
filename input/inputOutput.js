@@ -13,7 +13,7 @@ function imc() {
 
     if (nome !== "" && altura !== "" && peso !== "") 
     {
-const imc =(peso/(altura * altura) ) ;
+        const imc =(peso/(altura * altura) );
         //result.textContent= nome+" tem "+peso+"Kg"+" e mede "+altura+" de altura."+ " E seu imc é: "+imc.toFixed(2); 
         //OU
         result.textContent= `${nome} tem ${peso}Kg e mede ${altura} de altura.E seu imc é: ${imc.toFixed(2)}`; 
@@ -21,8 +21,7 @@ const imc =(peso/(altura * altura) ) ;
     else
     {
         window.alert("Existem campos vazios");
-    }
-    
+    }    
 }
 calc.addEventListener('click', imc);
 

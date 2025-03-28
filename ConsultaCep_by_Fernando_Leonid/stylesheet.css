@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Smooch+Sans:wght@100..900&family=Walter+Turncoat&family=Winky+Sans:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Winky Sans", sans-serif;
+}
+
+:root {
+    --bg-color: black;
+    --primary-color: #c5c4bd;
+}
+
+
+
+body {
+    background-color: rgb(218, 213, 213);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px black;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.form-coontainer {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+}
+
+.inputbox{
+    display: flex;
+    flex-flow: row wrap;
+
+    
+}
+
+label{
+    color: #555;    
+}
+input:read-only{
+    background-color: #f0f0f0;
+    color: #666;
+}
+
+.button-salvar{
+    background-color: #666;
+    margin-top: 20px;
+    padding: 12px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.button-salvar:hover{
+    background-color: #45a049;
+}
