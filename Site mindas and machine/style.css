@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+:root {
+    --cor00: #0a169cf5;
+    --cor01: #f2f2f5;
+    --cor02: rgb(3, 20, 248);
+    --cor03: white;
+    --Tam: 1200px;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Smooch+Sans:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+main {
+    width: 100%;
+    padding: 0px 0px 20px 0px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(190, 189, 189);
+}
+
+.destaque h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 80px 0px 10px 0px;
+    padding: 10px 0px 0px 20px;
+    font-family: "Walter Turncoat", cursive;
+}
+
+body {
+    width: 900px;
+    height: 1500px;
+    margin: auto;
+
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 90px;
+    max-width: 100%;
+    min-width: 50%;
+    /* background-color: rgb(9, 5, 236);*/
+    /*background-image: linear-gradient(to bottom, var(--cor01), var(--cor00));*/
+
+}
+
+header img {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    /*centraliza*/
+
+}
+
+nav {
+    /* background-color: var(--cor00);*/
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 20px 0px;
+
+    /*deixa o menu ao centro*/
+}
+
+nav a {
+    text-decoration: none;
+    padding: 1px 10px 1px 10px;
+    background-color: gainsboro;
+    color: var(--cor03);
+    margin: 2px;
+    border-radius: 5px;
+
+}
+
+nav a:hover {
+    background-color: white;
+    color: rgb(183, 183, 187);
+    transition: .5s;
+}
+
+.conteiner00 {
+    display: flex;
+    /*alinhar os item horizontalmente*/
+    justify-content: space-around;
+    /*distribuir os itens igualmente*/
+    flex-flow: row wrap;
+
+}
+
+.conteiner01 {
+    display: flex;
+    /*alinhar os item horizontalmente*/
+    /*justify-content: space-around;*/
+    /*distribuir os itens igualmente*/
+    flex-direction: row-reverse;
+    margin: 0px 0px 10px 10px;
+    align-items: center;
+    /*Alinha certicalmente os itens ao centro*/
+    justify-content: space-between;
+}
+
+.conteiner01>picture {
+    width: 300%;
+}
+
+.conteiner01>picture>img {
+    max-width: 90%;
+    margin: 0px 20px 0px 0px;
+    height: auto;
+    display: block;
+    /*Remove espaços extras abaixo da imagem*/
+}
+
+
+.item {
+    width: 30%;
+    height: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+    /*espaçamento entre os itens*/
+    margin-top: 20px;
+}
+
+.destaque img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*garante que a imagem preencha o espçao sem distorcer*/
+}
+
+
+
+footer p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+    background-color: rgb(12, 12, 134);
+    text-align: center;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    box-shadow: 0px 0px 12px rgb(151, 150, 150);
+}
+
+.conteiner_Perguntas {
+    background-color: rgb(248, 244, 244);
+    height: 20vh;
+    /*90% da tela na horizontal*/
+    width: 100%;
+    /*90% da tela na vertical*/
+    /*==========para centralizar======================*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+
+}
+
+.conteiner_Perguntas div.item {
+    background-color: #eaecea;
+
+    height: 100%;
+    margin: 0px 0px -10px 0px;
+
+
+}
+
+.Secao_Final {
+    background-color: rgb(254, 254, 255);
+    display: flex;
+}
+
+div.final_botton h6 {
+    background-color: #b1adad;
+    padding: 0px;
+    margin: 0px;
+    width: 15%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+div.final_botton p {
+    background-color: white;
+}
+
+.Secao_Final p {
+    background-color: #f4f5fa;
+    font-size: 40px;
+}
+
+.Titulo_encerramento hr {
+    margin: auto;
+}
+
+.Titulo_encerramento h1 {
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: auto;
+    text-align: center;
+}
