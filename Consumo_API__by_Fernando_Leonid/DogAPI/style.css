@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+* {
+    /*reset*/
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+   
+}
+
+.imagem-container{
+    margin: auto;
+    background-color: aqua;
+    width:  100%;
+    height: 100%;
+}
+
+
+#dog-img{
+    width: 60%;
+    object-fit: contain;
+    margin: auto;
+}
+
+.breed-Name{
+    position: absolute;
+    left: 100px;
+    top: 20px;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+}
