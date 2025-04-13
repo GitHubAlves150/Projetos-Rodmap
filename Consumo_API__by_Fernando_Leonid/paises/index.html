@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .country_input {
+            outline: none;
+            border: none;
+            font-size: 16px;
+            width: 90%;
+            margin: auto;
+            margin-bottom: 2px;
+            margin-top: 10px;
+            padding-bottom: 8px;
+            border-bottom: 4px solid #F7DF1E;            
+        }
+
+
+        .country {
+            display: flex;
+            flex-flow: column nowrap;
+
+            margin: auto;
+            box-shadow: 0px 0px 10px rgb(158, 157, 157);
+            height: 600px;
+            width: 500px;
+        }
+
+        .country_name {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 900px;
+            text-transform: uppercase;
+            text-align: center;
+            color: lightgrey;
+            padding-top: 50px;
+
+        }
+
+        .country__flag {
+
+            width: 90%;
+            margin: auto;
+            margin-top: 20px;
+
+        }
+
+        .country_capital {
+            text-align: center;
+            color: lightgrey; 
+            padding: 00px 10px 30px 10px;
+
+        }
+
+        footer {
+            text-align: center;
+            color: lightgray;
+        }
+    </style>
+    <title>Paises</title>
+</head>
+
+<body>
+    <main>
+        <div class="country">
+            <input type="text" id="country-input" class="country_input" placeholder="nome_pais" value="">
+            <img id="country-flag" class="country_flag" src="pexel.jpg">
+            <h2 id="country-name" class="country_name" >javascript</h2>
+            <p id="country-capital" class="country_capital">Front-End</p>
+        </div>
+    </main>
+    <footer>
+        <h4>lucas lorenço alves</h4>
+    </footer>
+ <script src="javaScript.js"></script>
+   
+</body>
+</html>

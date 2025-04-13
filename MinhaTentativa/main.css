@@ -1,0 +1,35 @@
+main{
+    border: 2px dashed yellow;
+    padding: 20px;
+    margin: 10px;
+}
+
+.apresentacao{
+    display: flex;
+    flex-flow: row  nowrap;
+border: 4px dashed black;
+}
+
+.abordagem_text{
+   
+    display: flex;
+    flex-flow: row wrap-reverse;
+    background-color: rgb(173, 170, 170);
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+}
+.text{     
+    flex-grow: 1;
+    flex-shrink: 1;    
+    flex-basis: 300px;
+    flex-basis: 300px;    
+    border: 2px dashed rgb(248, 7, 7);
+    margin: 10px;
+}
+.media_img img{
+    width: 300px;
+    height: 300px;    
+    margin-left: 20px;
+}
+
