@@ -1,0 +1,66 @@
+.conteiner {
+    width: 300px;
+    height: 500px;
+    background-color: lightgray;
+    margin: auto;
+    box-shadow: 0px 2px 16px rgb(141, 140, 140);
+}
+
+._label {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._label input {
+    outline: none;
+    border: none; 
+    background-color: transparent
+
+}
+
+.sol {
+
+    display: flex;
+    justify-content: center;
+}
+
+.temperatura {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.city {
+    text-align: center;
+    font-size: 40px;
+}
+
+.humidity_class img {
+
+    width: 10%;
+    height: 10%;
+}
+
+.humidity_class {
+    display: flex;
+    align-items: center;
+    line-height: 1px;
+    margin-left: 10px;
+    color: black;
+
+}
+
+.wind img {
+    width: 20%;
+    height: 20%;
+}
+
+.wind {
+    margin-left: 200px;
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+    line-height: 1px;
+}
