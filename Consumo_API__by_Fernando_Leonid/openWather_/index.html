@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./src/style/style.css">
+    <link rel="stylesheet" href="./src/style/style.css">
+    <script src="./src/Script/script.js" defer></script>
     <title>Open Weather</title>
 </head>
 
@@ -17,7 +18,7 @@
             <form action="" id="form-id" class="form-class">
                 <i class="fa-solid fa-location-dot"></i>
                 <input id="search-name-id" class="search-name-class" type="text" placeholder="Local">
-                <button type="submit">
+                <button type="submit" id="ckl">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
 
@@ -26,7 +27,7 @@
                 <h1 id="title-id" class="title-class">Florianópolis, BR</h1>
                 <div id="infos-id" class="infos-class">
                     <div id="temp-id" class="temp-class">
-                        <img src="./src/Img/Cloud.png" alt="Imagem de uma nuvem" >
+                        <img src="./src/Img/Cloud.png" alt="Imagem de uma nuvem">
                         <div>
                             <p id="temp-value-id" class="temp-value-class">
                                 00 <sup>Cº</sup>
@@ -37,38 +38,48 @@
                         </div>
                     </div>
                     <div id="other-infos-id" class="other-infos-class">
-                        <div id="Temp-max-id" class="Temp-max-class">
-                            <img src="./src/Img/Temperatura.png" alt="icone de Temperatura" >
-                            <div>
-                                <h2>Tem.Max</h2>
-                                <p id="Temperatura-max-id" class="Temperatura-max-class" >
-                                    00 <sup>Cº</sup>
-                                </p>
+
+                        <div class="info-conteiner">
+                            <div id="Temp-max-id" class="Temp-max-class">
+                                <img src="./src/Img/Temperatura.png" alt="icone de Temperatura">
+                                <div>
+                                    <h2>Tem.Max</h2>
+                                    <p id="Temperatura-max-id" class="Temperatura-max-class">
+                                        00 <sup>Cº</sup>
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="Temp-min-id" class="Temp-min-class">
+                                <img src="./src/Img/TemperaturaFria.png" alt="icone de temperatura minima" ;>
+                                <div>
+                                    <h2>Temp.min</h2>
+                                    <p>
+                                        00 <sup>Cº</sup>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div id="Temp-min-id" class="Temp-min-class">
-                            <img src="./src/Img/TemperaturaFria.png" alt="icone de temperatura minima";>
-                            <div>
-                                <h2>Temp.min</h2>
-                                <p>
-                                    00 <sup>Cº</sup>
-                                </p>
+                        <div class="info-conteiner">
+                            <div id="humidade-id" class="Humidade-class">
+                                <img src="./src/Img/Humidity.png" alt="incone de Humidade" ;>
+                                <div>
+                                    <h2>Humidade</h2>
+                                    <p id="humidade-id">
+                                        00 <sup>Cº</sup>
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="vento-id" class="vento-class">
+                                <img src="./src/Img/Wind.png" alt="icone de vento">
+                                <div>
+                                    <h2>Vento(KM/h)</h2>
+                                    <p id="kilometro-hora">
+                                        00 
+                                    </p>
+                                    
+                                </div>
                             </div>
                         </div>
-                        <div id="humidade-id" class="Humidade-class">
-                            <img src="./src/Img/Humidity.png" alt="incone de Humidade" ;>
-                            <div>
-                                <h2 id="humidade-id">00</h2>
-                                <h2>%</h2>
-                            </div>
-                        </div>
-                       <div id="vento-id" class="vento-class">
-                        <img src="./src/Img/Wind.png" alt="icone de vento" >
-                        <div>
-                            <h2 id="kilometro-hora">00</h2>
-                            <h2>KM/h</h2>
-                        </div>
-                       </div> 
                     </div>
 
                 </div>
