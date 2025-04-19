@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script> 
     <title>Document</title>
 </head>
 
-<body>
+<body id="corpo">
     <section class="conteiner">
         <label class="_label">
-            <img src="localizacao.png" alt="localizacao" width="10%">
-            <input type="text" placeholder="digite">
+            <img  src="localizacao.png" alt="localizacao" width="10%">
+            <input id="weather-search" type="text" placeholder="digite">
         </label>
         <div class="sol">
-            <img src="sol.png" alt="sol">
+            <img id="icone" class="icon" src="sol.png" alt="sol">
         </div>
         <div class="temperatura">
-            <h2>30.0</h2>
+            <h2 id="temp">30.0</h2>
         </div>
         <div class="city">
-            <p>Cidade</p>
+            <p id="city_id">Cidade</p>
         </div>
         <div class="humidity_class">
             <img src="humidade.png" alt="sol">
             <div>
-                <p id="humidity" class="humidity-text">90%</p>
+                <p id="humidity_id" class="humidity-text">90%</p>
                 <p>Humidadde</p>
             </div>
         </div>
@@ -40,6 +41,7 @@
 
 
     </section>
+    
 </body>
 
 </html>
