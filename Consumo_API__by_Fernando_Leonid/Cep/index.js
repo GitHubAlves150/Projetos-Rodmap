@@ -43,8 +43,7 @@ const pesquisar = async() => {
         box_result.textContent=`${endereco.logradouro},
                                 ${endereco.localidade}`;
         preencherForm(endereco);
-    }    
-   
+    }      
 
 }
 
