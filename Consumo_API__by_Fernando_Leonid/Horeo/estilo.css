@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Background-color: #1a1a1a;
+    --Text-color: #fff;
+    --Primary-color: #FFC107;
+    --Secondary-color: #2196F3;
+    --Input-background: #444;
+    --Suggestion-background: #555;
+    --Suggestion-hover: #666;
+}
+
+body {
+    background-color: lightblue;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.search-conteiner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 20px;
+}
+
+.search-conteiner input {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: var(--Input-background);
+    color: var(--Text-color);
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.vs {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--Primary-color);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #000;
+}
+
+/*
+.suggestions{
+    position: absolute;
+    background-color: var(--Input-background);
+    border-radius: 4px;
+    z-index: 999;
+}
+
+.suggestions-item{
+    padding: 12px;
+    cursor: pointer;
+}
+.suggestions.item:hover{
+    background-color: var(--Suggestion-hover);
+}
+*/
+.conteiner {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+.card {
+    min-height: 320px;
+    width: 200px;
+    padding: 16px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card.hero1 {
+    color: black;
+    background-color: var(--Primary-color);
+}
+
+.card.hero2 {
+    background-color: var(--Secondary-color);
+}
+
+.card img{
+    max-width: 100%;
+    border-radius: 4px;
+    box-shadow: 4px 4px 16px #000;
+}
+
+.chart{
+    visibility: hidden;
+}
+.chart.active{
+    visibility: visible;
+}
