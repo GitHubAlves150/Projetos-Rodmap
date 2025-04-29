@@ -5,36 +5,41 @@
 }
 
 :root {
-    --Background-color: #1a1a1a;
-    --Text-color: #fff;
-    --Primary-color: #FFC107;
-    --Secondary-color: #2196F3;
-    --Input-background: #444;
-    --Suggestion-background: #555;
-    --Suggestion-hover: #666;
+    --background-color: #1a1a1a;
+    --text-color: #fff;
+    --primary-color: #FFC107;
+    --secondary-color: #2196F3;
+    --input-background: #444;
+    --suggestion-background: #555;
+    --suggestion-hover: #666;
 }
 
 body {
-    background-color: lightblue;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
     padding: 20px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.search-conteiner {
+h1, h2 {
+    margin: 10px 0;
+}
+
+.search-container {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
     gap: 20px;
+    margin-bottom: 20px;
 }
 
-.search-conteiner input {
+
+.search-container input {
     padding: 10px;
     font-size: 1rem;
-    background-color: var(--Input-background);
-    color: var(--Text-color);
+    background-color: var(--input-background);
+    color: var(--text-color);
     border: none;
     border-radius: 5px;
     width: 200px;
@@ -48,30 +53,29 @@ body {
 button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: var(--Primary-color);
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
+    background-color: var(--primary-color);
     color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-/*
 .suggestions{
     position: absolute;
-    background-color: var(--Input-background);
+    background-color: var(--input-background);
     border-radius: 4px;
     z-index: 999;
 }
-
-.suggestions-item{
+.suggestions-item {
     padding: 12px;
     cursor: pointer;
 }
-.suggestions.item:hover{
-    background-color: var(--Suggestion-hover);
+
+.suggestions-item:hover{
+    background-color: var(--suggestion-hover);
 }
-*/
-.conteiner {
+
+.container {
     display: flex;
     justify-content: space-evenly;
     width: 100vw;
@@ -87,22 +91,23 @@ button {
 
 .card.hero1 {
     color: black;
-    background-color: var(--Primary-color);
+    background-color: var(--primary-color);
 }
 
 .card.hero2 {
-    background-color: var(--Secondary-color);
+    background-color: var(--secondary-color);
 }
 
-.card img{
+.card img {
     max-width: 100%;
     border-radius: 4px;
     box-shadow: 4px 4px 16px #000;
 }
 
-.chart{
+.chart {
     visibility: hidden;
 }
+
 .chart.active{
     visibility: visible;
 }

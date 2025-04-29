@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilo.css">
-    <title>Document</title>
+    <script src="./main.js" defer></script>
+    <title>Comparação de Super-Heróis</title>
 </head>
 <body>
-    <h1>Comparacao de heroi</h1>
-    <div class="search-conteiner">
+    <h1>Comparação de Super-Heróis</h1>
+    <div class="search-container">
         <div class="search-box">
-            <input id="hero1-input"  type="text" placeholder="Digite aqui o nome do heroi 1">
+            <input type="text" id="hero1-input" placeholder="Digite o nome do Herói 1">
         </div>
         <span class="vs">VS</span>
         <div class="search-box">
-            <input id="hero1-input"  type="text" placeholder="Digite aqui o nome do heroi 2">
+            <input type="text" id="hero2-input" placeholder="Digite o nome do Herói 2">
         </div>
-        <button id="Compare-button">Comparar</button>
+        <button id="compare-button">Comparar</button>
     </div>
-    <div class="conteiner">
+    <div class="container">
         <div class="card hero1" id="card1"></div>
-        <img src="./sp.png" alt="Grafico de comparacao">
+        <img class="chart" id="chart" src="" alt="Gráfico de Comparação">
         <div class="card hero2" id="card2"></div>
     </div>
 </body>
