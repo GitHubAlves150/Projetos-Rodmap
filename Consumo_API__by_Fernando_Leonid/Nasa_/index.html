@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilo.css">
     <link rel="stylesheet" href="./mobile.css" media="screen and (max-width:600px)">
+    <link rel="stylesheet" href="./Actually_data.css">
+    <link rel="stylesheet" href="./degrade.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Iansui&family=Playpen+Sans:wght@100..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap"
+        rel="stylesheet">
 
     <title>Dados coletados da Nasa</title>
 </head>
@@ -15,17 +22,25 @@
         <h1>InSight: Mars Weather Service API</h1>
     </header>
     <main class="Main_">
-        <h1>Weather at Elysium Planitia</h1>
-        <p>
-            Elysium Planitia is a large, flat plain located on Mars, north of the equator. It is known to be an ideal
-            location for studying the deep interior of the planet, as demonstrated by NASA's InSight mission, which
-            landed there.
-        </p>
+        <div class="introducao">
+            <h1>Weather at Elysium Planitia</h1>
+            <p>
+                Elysium Planitia is a large, flat plain located on Mars, north of the equator. It is known to be an
+                ideal <br>
+                location for studying the deep interior of the planet, as demonstrated by NASA's InSight mission, which
+                landed there.
+            </p>
+        </div>
+
         <div class="Actually_data">
-            <h2 class="sol" id="sol_">Sol</h2>
-            <p class="mes_marciano" id="mes_marciano_">mes marciano</p>
-            <p class="Temp_Height_">temp alta</p>
-            <p class="Temp_Low">temp low</p>
+            <div class="sol234">
+                <h1>Sol 234</h1>
+                <p>August 25</p>
+            </div>
+            <div class="sol235">
+                <p>Height: <spann class="height_span">14</span> </p>
+                <p>Low: <span class="Low_span">-12</span></p>
+            </div>
         </div>
         <div class="Last_data_conteiner">
             <div class="sol_7">
@@ -72,6 +87,7 @@
             </div>
         </div>
     </main>
+    
     <footer>by lucas</footer>
 </body>
 
