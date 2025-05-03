@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.Actually_data {
+    display: flex;
+    flex-flow: col wrap;
+    max-width: 55vw;
+    margin: auto;
+}
+
+.sol234 h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    font-size: 30px;
+}
+
+.sol235 {
+    margin-left: 40px;
+    margin-top: 2px;
+    gap: 10px;
+    font-size: 60px;
+}
+
+.sol234 p {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.sol235 p {
+    font-size: 30px;
+}
+
+.Low_span {
+    font-size: 30px;
+}

@@ -6,11 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
     <title>Teste</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 20px;
+            height: 560px;
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(./wallpaper002.jpg);
+
+            /* Ajusta a imagem para cobrir todo o elemento */
+            background-size: cover;
+
+            /* Centraliza a imagem */
+            background-position: center;
+
+            /* Evita repetição da imagem */
+            background-repeat: no-repeat;
+        }
+
+
+        .info-conteiner {
+            display: flex;
+            flex-flow: col wrap;
+            max-width: 55vw;
+            margin: auto;
+        }
+
+        .sol234 h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .sol235 {
+            margin-left: 20px;
+            gap: 10px;
+            font-size: 60px;
+        }
+
+        .sol234 p {
+            text-align: center;
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .sol235 p {
+            font-size: 30px;
+        }
+
+        .Low_span {
+            font-size: 30px;
+        }
+    </style>
 </head>
 
 <body>
-   
-      
+    <div class="info-conteiner">
+        <div class="sol234">
+            <h1>Sol 234</h1>
+            <p>August 25</p>
+        </div>
+        <div class="sol235">
+            <p>Height: <spann class="height_span">14</span> </p>
+            <p>Low: <span class="Low_span">-12</span></p>
+        </div>
+    </div>
+
+
 
 
 </body>
