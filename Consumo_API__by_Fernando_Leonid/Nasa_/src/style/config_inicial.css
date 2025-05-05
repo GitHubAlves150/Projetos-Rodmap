@@ -27,7 +27,7 @@ main {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0.0.0.0)), url(../../img/satelite.png);
     display: flex;
     flex-flow: row wrap;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto;
     padding: 30px 10px 10px 40px;
 }
