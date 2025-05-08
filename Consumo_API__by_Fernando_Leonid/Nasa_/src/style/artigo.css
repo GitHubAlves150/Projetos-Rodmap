@@ -7,6 +7,6 @@
     padding: 30px 10px 10px 40px;
 }
 
-.artigo h1, p{
+.artigo > h1 > p{
     color: black;
 }
