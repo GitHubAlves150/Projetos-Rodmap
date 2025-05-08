@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="./src/style/texto.css">
     <link rel="stylesheet" href="./src/style/dados_atuais.css">
     <link rel="stylesheet" href="./src/style/dados_semanais.css">
-    <link rel="stylesheet" href="./src/style/artigo.css">
+    <link rel="stylesheet" href="./src/style/artigo00.css">
+    <link rel="stylesheet" href="./src/style/artigo01.css">
     <script src="./script.js" defer></script>
     <script src="./script_dolar.js" defer></script>
 
@@ -178,21 +179,51 @@
         </section>
 
     </main>
-    <article class="artigo">
+    <article class="artigo00">
+        <p>
+            A API InSight: Mars Weather Service da NASA forneceu dados meteorológicos contínuos da superfície de Marte,
+            coletados pelo lander InSight na planície de Elysium Planitia, perto do equador marciano. Essa API permitia
+            que cientistas, educadores e o público em geral acessassem informações valiosas sobre a temperatura, o vento
+            e a pressão atmosférica no local de pouso da InSight. Os dados eram disponibilizados em formato JSON,
+            facilitando a integração em diversas aplicações e plataformas para análise e visualização.
+        </p>
+        <p>Através dessa API, era possível acompanhar as variações diárias e sazonais do clima marciano, oferecendo
+            insights importantes sobre a dinâmica da atmosfera do planeta vermelho. Cada dia marciano, ou "sol", era
+            registrado com suas respectivas medições, permitindo a criação de séries temporais e a identificação de
+            padrões
+            climáticos. Essa riqueza de informações contribuía significativamente para a compreensão das condições
+            ambientais em Marte.</p>
+
+        <p>Apesar de a missão InSight ter sido encerrada em 2022, os dados históricos coletados e disponibilizados
+            através desta API continuam sendo um recurso valioso para a pesquisa científica e para o engajamento público
+            com a exploração espacial. As informações sobre o clima de Marte, obtidas diretamente da superfície,
+            oferecem um ponto de referência crucial para futuras missões e para a busca por evidências de habitabilidade
+            no planeta.</p>
+        <p>
+            Para aqueles interessados em explorar os dados históricos, a documentação da API ainda pode ser consultada,
+            embora a coleta de novos dados tenha cessado. Essa API representou uma ferramenta poderosa para a
+            disseminação do conhecimento científico sobre Marte, tornando os dados meteorológicos acessíveis a uma ampla
+            audiência e inspirando a curiosidade sobre o nosso vizinho planetário.
+        </p>
+    </article>
+    <article class="artigo01">
         <section class="api-dolar">
             <div class="dolar-container">
-                <div class="1-dolar">
+                <div class="dolar_1">
                     <h6>1 Dólar dos Estados Unidos equivale a</h6>
                 </div>
                 <div class="dolar-atual">
-                    <h1>1,111 <span>Real Brasileiro</span></h1>
+                    <h1 id="USD-BRD">1,111 </h1>
                 </div>
                 <div class="data-dolar">
-                    8/05, 10:01 UTC · De Morningstar · Exclusão de Responsabilidade
+                    <p id="data_dolar" style="color: black;">
+                        ...........Aguardando a data atual do dolar............
+                    </p>
                 </div>
                 <div class="campos_convert">
                     <input id="dolar_" type="text" placeholder="1 Real"> <br>
-                    <output name="resultado" for="dolar_">Dolar</output>
+                    <!--<output name="resultado" for="dolar_">Dolar</output>-->
+                    <input type="resultado" placeholder="Dolar" readonly>
                 </div>
             </div>
             <div class="grafico">
@@ -200,7 +231,7 @@
                     <img src="./img/grafico.png" alt="Grafico do dolar atual">
                 </div>
             </div>
-        </section>      
+        </section>
 
 
     </article>

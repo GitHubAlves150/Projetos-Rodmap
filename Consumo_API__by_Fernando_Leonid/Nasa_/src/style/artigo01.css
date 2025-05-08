@@ -1,21 +1,30 @@
-.artigo {
+.artigo01{
     border: 2px dashed red;
     display: flex;
     flex-flow: column wrap;
     max-width: 1200px;
     margin: auto;
     padding: 30px 10px 10px 40px;
+    color: black;    
 }
 
-.artigo,
+.artigo01,
 h6 {
     color: black;
 }
 
 .dolar-atual h1 {
-    color: black;
+    color: rgb(18, 18, 18);
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+
+.dolar_1{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
 input {
     border: 2px dashed red;
     border: 1px solid #ccc;
