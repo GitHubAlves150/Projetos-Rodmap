@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./src/style/dados_semanais.css">
     <link rel="stylesheet" href="./src/style/artigo.css">
     <script src="./script.js" defer></script>
+    <script src="./script_dolar.js" defer></script>
 
     <title>Dados da nasa</title>
 
@@ -178,15 +179,30 @@
 
     </main>
     <article class="artigo">
-        <div class="1-dolar">
-            <h6> 1 Dólar dos Estados Unidos equivale a</h6>
-        </div>
-        <div class="dolar-atual">
-            <h1>x, xx dolar</h1>
-        </div>
-        <div class="data-dolar">
-            
-        </div>
+        <section class="api-dolar">
+            <div class="dolar-container">
+                <div class="1-dolar">
+                    <h6>1 Dólar dos Estados Unidos equivale a</h6>
+                </div>
+                <div class="dolar-atual">
+                    <h1>1,111 <span>Real Brasileiro</span></h1>
+                </div>
+                <div class="data-dolar">
+                    8/05, 10:01 UTC · De Morningstar · Exclusão de Responsabilidade
+                </div>
+                <div class="campos_convert">
+                    <input id="dolar_" type="text" placeholder="1 Real"> <br>
+                    <output name="resultado" for="dolar_">Dolar</output>
+                </div>
+            </div>
+            <div class="grafico">
+                <div class="grafico">
+                    <img src="./img/grafico.png" alt="Grafico do dolar atual">
+                </div>
+            </div>
+        </section>      
+
+
     </article>
     <footer>
         <p>By Lucas Alves</p>

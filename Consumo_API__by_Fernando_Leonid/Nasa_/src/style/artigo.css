@@ -1,12 +1,55 @@
 .artigo {
     border: 2px dashed red;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     max-width: 1200px;
     margin: auto;
     padding: 30px 10px 10px 40px;
 }
 
-.artigo > h1 > p{
+.artigo,
+h6 {
     color: black;
+}
+
+.dolar-atual h1 {
+    color: black;
+}
+
+input {
+    border: 2px dashed red;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-family: sans-serif;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    display: inline-block;
+    /* Para se comportar como um elemento inline */
+    min-width: 10vw;
+    /* Defina uma largura conforme necessário */
+}
+
+output {
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-family: sans-serif;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    display: inline-block;
+    /* Para se comportar como um elemento inline */
+    min-width: 10vw;
+    /* Defina uma largura conforme necessário */
+}
+
+.api-dolar{
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px dashed rgb(25, 0, 255);
+}
+.dolar-container{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    margin-top: 40px;
+    margin-right: 20px;    
 }
