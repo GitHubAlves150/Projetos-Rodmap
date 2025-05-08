@@ -10,6 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+<<<<<<< Updated upstream
     animation: fadIn linear 1s;
 }
 
@@ -27,8 +28,56 @@ body {
 input[type="text"],
 input[type="password"],
 button {
+=======
+    background-color: #f4f4f4;
+    opacity: 0;
+    /* Inicialmente invisível para o efeito de fade-in */
+    transition: opacity 1s ease-in-out;
+}
+
+body {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+body {
+    opacity: 1;
+}
+
+.Login-conteiner {
+    height: 400px;
+    width: 600px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 80vw;
+    min-height: 50vh;
+    border: 2px dashed red;
+
+}
+
+button[type="submit"] {
+    
+    width:calc(30% - 12px);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+button[type="submit"]:hover{
+    background-color: rgb(21, 6, 135);
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(30% - 12px);
+    padding: 10px;
+>>>>>>> Stashed changes
     border: 1px solid #ddd;
     box-sizing: border-box;
+<<<<<<< Updated upstream
     padding: 10px;
     width: calc(100% - 20px);
     outline: none;
@@ -68,4 +117,7 @@ main{
    
     
 
+=======
+    margin-bottom: 10px;
+>>>>>>> Stashed changes
 }
