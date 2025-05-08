@@ -1,0 +1,12 @@
+.artigo {
+    border: 2px dashed red;
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 10px 10px 40px;
+}
+
+.artigo h1, p{
+    color: black;
+}

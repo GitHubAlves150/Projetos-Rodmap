@@ -1,35 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Login</title>
+
 </head>
+
 <body>
-    <div id="login-container">
-        <h1>Login</h1>
-        <form id="login-form">
-            <div class="input-group">
-                <label for="username">Usuário:</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Senha:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit">Entrar</button>
-            <p id="error-message" class="error"></p>
-        </form>
-    </div>
+    <main>
+        <img class="img_" src="./video/api.png" alt="simbolo de API">
+        <div class="login-container">
+            <input id="username" type="text" placeholder="Username">
+            <input id="password" type="password" placeholder="Password">
+            <button id="btn" type="submit">Enter</button>
+        </div>        
+    </main>
 
-    <div id="video-container" class="hidden">
-        <video id="intro-video" width="640" height="360" controls autoplay>
-            <source src="./video/3189288-hd_1080_1920_25fps.mp4" type="video/mp4">
-            Seu navegador não suporta vídeos HTML5.
-        </video>
-    </div>
 
-    <script src="script.js"></script>
+
+
 </body>
+
 </html>

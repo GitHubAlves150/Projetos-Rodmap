@@ -1,47 +1,42 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const body = document.body;
-    const loginForm = document.getElementById('login-form');
-    const videoContainer = document.getElementById('video-container');
-    const introVideo = document.getElementById('intro-video');
-    const errorMessage = document.getElementById('error-message');
+'user strict'
 
-    // Efeito de fade-in ao carregar a página
-    setTimeout(() => {
-        body.classList.add('loaded');
-    }, 100); // 100ms para garantir que o browser renderize antes da transição
+document.getElementById('username').textContent=" ";
 
-    loginForm.addEventListener('submit', (event) => {
-        event.preventDefault(); // Impede o envio padrão do formulário
+document.getElementById('btn').addEventListener('click', (event) => {
 
-        const usernameInput = document.getElementById('username');
-        const passwordInput = document.getElementById('password');
-        const username = usernameInput.value.trim();
-        const password = passwordInput.value.trim();
 
-        // Validação simples (admin/admin)
-        if (username === 'admin' && password === 'admin') {
-            // Login bem-sucedido: inicia a transição para o vídeo
-            body.classList.remove('loaded'); // Remove o fade-in da tela de login
-            videoContainer.classList.remove('hidden');
-            setTimeout(() => {
-                videoContainer.classList.add('show');
-            }, 100); // Pequeno delay para garantir a transição
 
-            // Após 2 segundos (duração do vídeo), redireciona para o blog
-            setTimeout(() => {
-                window.location.href = 'https://mindsemachine.site'; // Substitua pelo URL do seu blog
-            }, 4000); // 4000 milissegundos = 4 segundos
+    const loginContainer = document.getElementById('login-container');  
+    const imageContainer = document.getElementById('image-container'); 
 
-        } else {
-            // Login falhou: exibe mensagem de erro
-            errorMessage.textContent = 'Usuário ou senha incorretos.';
-        }
-    });
+  
+    const userINPUT = document.getElementById('username');
+    const pwINPUT = document.getElementById('password');
+    const user = userINPUT.value.trim();    
+    const pw = pwINPUT.value.trim();
+    
 
-   /* // Opcional: Esconde o vídeo após a reprodução (se não quiser redirecionar direto)
-    introVideo.addEventListener('ended', () => {
-        videoContainer.classList.remove('show');
-        videoContainer.classList.add('hidden');
-        window.location.href = 'https://mindsemachine.site'; // Redireciona após o vídeo terminar
-    });*/
+    if (user === 'admin' && pw === 'admin') {
+
+
+        setTimeout(() => {
+            imageContainer.classList.add('show'); // Inicia o fade-in da imagem
+        }, 50);
+
+
+        setTimeout(() => {
+            window.location.href = 'https://mindsemachine.site/';
+
+        }, 1000);
+
+    }
+    else {
+        alert("Nao foi possivel abrir tal pagina...");
+    }
+
 });
+
+
+
+
+
