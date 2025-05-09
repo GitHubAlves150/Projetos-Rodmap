@@ -62,3 +62,10 @@ output {
     margin-top: 40px;
     margin-right: 20px;    
 }
+
+.grafico{
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    
+}
