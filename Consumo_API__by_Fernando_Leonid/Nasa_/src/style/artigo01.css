@@ -1,11 +1,11 @@
-.artigo01{
-    border: 2px dashed red;
+.artigo01 {
+    border: 4px dashed rgb(23, 33, 2);
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     max-width: 1200px;
     margin: auto;
     padding: 30px 10px 10px 40px;
-    color: black;    
+    color: black;
 }
 
 .artigo01,
@@ -20,11 +20,12 @@ h6 {
 }
 
 
-.dolar_1{
+.dolar_1 {
     font-size: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
+
 input {
     border: 2px dashed red;
     border: 1px solid #ccc;
@@ -50,22 +51,68 @@ output {
     /* Defina uma largura conforme necessário */
 }
 
-.api-dolar{
+.api-dolar {
     display: flex;
     flex-flow: row wrap;
     border: 2px dashed rgb(25, 0, 255);
+    padding: 0;
+    max-width: 20vw;
 }
-.dolar-container{
+
+.dolar-container {
     display: flex;
     flex-flow: column wrap;
     gap: 10px;
     margin-top: 40px;
-    margin-right: 20px;    
+    margin-right: 20px;
 }
 
-.grafico{
+.grafico {
     width: 600px;
     height: 600px;
     margin: auto;
-    
+
+}
+
+.slides-container-propaganda {
+    border: 2px dashed rgb(0, 255, 26);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide img {
+  border: 5px dashed rgb(255, 183, 0);
+  width: 100%;
+  height: 100%;
+  /*elminar os espaços*/
+  display: block;
+  /*para manter a proporção*/
+  object-fit:cover;
+  /*permite sobrepor as imagens*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*Deixa todas a simagens invisiveis*/
+  opacity: 0;
+  /*transição suave*/
+  transition: opacity 2s ease-in-out;
+}
+
+.slide.active img {
+  /*A imagem com a classe 'active' fica visivel*/
+  opacity: 1;
+}
+
+.slide p {
+  position: absolute;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  bottom: 10px;/*coloca o titulo na parte de baixo*/
+  left: 10px
+  
 }

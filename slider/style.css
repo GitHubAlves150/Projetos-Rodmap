@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray;
+}
+
+.container {
+  border: 2px dashed red;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-propaganda {
+  border: 2px dashed rgb(0, 255, 26);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.slide img {
+  border: 5px dashed rgb(255, 183, 0);
+  width: 100%;
+  height: 100%;
+  /*elminar os espaços*/
+  display: block;
+  /*para manter a proporção*/
+  object-fit: cover;
+  /*permite sobrepor as imagens*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*Deixa todas a simagens invisiveis*/
+  opacity: 0;
+  /*transição suave*/
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active img {
+  /*A imagem com a classe 'active' fica visivel*/
+  opacity: 1;
+}
+
+.slide p {
+  position: absolute;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}

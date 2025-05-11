@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.info-variados{
+    border: 2px dashed blue;
+    margin-left: 5px;
+    min-width: 300px;
+}
+
+.cnn-00{
+    border: 2px dashed rgb(161, 161, 8);
+    width: 100%;
+}
+.cnn-01{
+    border: 2px dashed rgb(161, 161, 8);
+}
+.cnn-02{
+    border: 2px dashed rgb(161, 161, 8);
+}
+.cnn-03{
+    border: 2px dashed rgb(161, 161, 8);
+}
+
+.slides-container{
+    
+}

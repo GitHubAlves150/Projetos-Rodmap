@@ -11,8 +11,12 @@
     <link rel="stylesheet" href="./src/style/dados_semanais.css">
     <link rel="stylesheet" href="./src/style/artigo00.css">
     <link rel="stylesheet" href="./src/style/artigo01.css">
+    <link rel="stylesheet" href="./src/style/infovariados.css">
+
     <script src="./script.js" defer></script>
     <script src="./script_dolar.js" defer></script>
+    <script src="./scriptSlide.js" defer></script>
+    <script src="./scriptAPINoticias.js" defer></script><!--Slider-Container-Propagandas-->
 
     <title>Dados da nasa</title>
 
@@ -226,12 +230,35 @@
                     <input id="dolar_saida" type="resultado" placeholder="Dolar" readonly>
                 </div>
             </div>
-            <div class="grafico">
-                <iframe src="https://br.investing.com/currencies/usd-brl-chart" frameborder="0"></iframe>
-                <iframe src="https://www.cursoemvideo.com/" frameborder="0"></iframe>
+            <div class="slides-container-propaganda">
+                <div class="slide active">
+                    <img src="./img/A.jpg" alt="imagem" id="Imagem-A">
+                    <p id="manchet-A">Manchet A</p>
+                </div>
+                <div class="slide">
+                    <img src="./img/B.jpg" alt="">
+                    <p id="manchet-A">Manchet B</p>
+                </div>
+                <div class="slide">
+                    <img src="./img/gato.jpg" alt="">
+                    <p id="manchet-A">Manchet C</p>
+                </div>
             </div>
         </section>
-
+        <section class="info-variados">
+            <div class="cnn-00">
+                <p>Teste00</p>
+            </div>
+            <div class="cnn-01">
+                <p>Teste01</p>
+            </div>
+            <div class="cnn-02">
+                <p>Teste02</p>
+            </div>
+            <div class="cnn-03">
+                <p>Teste03</p>
+            </div>
+        </section>
 
     </article>
     <footer>

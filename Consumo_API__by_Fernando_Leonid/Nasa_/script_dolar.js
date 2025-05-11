@@ -17,11 +17,10 @@ async function Dolar() {
         dolarNUmberSaida.value=resultado;
     });
 
-    console.log(">>", dolarNUmber);
+    console.log(">>", dolarNUmberSaida);
 
 }
 
 
 
 Dolar();
-MostraDolar();
