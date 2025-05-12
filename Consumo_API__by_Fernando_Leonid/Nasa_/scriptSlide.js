@@ -2,7 +2,7 @@
 
 const slides = document.querySelectorAll('.slide');
 let currentINDEX = 0;
-const intervalTime = 5000;//2s
+const intervalTime = 3000;//2s
 
 function showSlide(index) {
     slides.forEach(slide => slide.classList.remove('active'));
