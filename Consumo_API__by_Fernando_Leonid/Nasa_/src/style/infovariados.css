@@ -4,26 +4,40 @@
     box-sizing: border-box;
 }
 
-.info-variados{
-    border: 2px dashed blue;
-    margin-left: 5px;
-    min-width: 300px;
+.info-variados {
+    display: flex;
+    flex-flow: column wrap;
+    margin: auto;
+    width: 700px;
+    height: 800px;
+    overflow: hidden;
+
 }
 
-.cnn-00{
-    border: 2px dashed rgb(161, 161, 8);
+.info-variados h1{
+    text-align: center;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 1px 1px 1px 1px ;
+}
+.info-variados img {
     width: 100%;
-}
-.cnn-01{
-    border: 2px dashed rgb(161, 161, 8);
-}
-.cnn-02{
-    border: 2px dashed rgb(161, 161, 8);
-}
-.cnn-03{
-    border: 2px dashed rgb(161, 161, 8);
+    height: 100%;
+    object-fit: cover;
 }
 
-.slides-container{
-    
+.cnn {
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+    margin-top: 50px;
+
+}
+.Descricao_noticias p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-indent: 10px;
+    margin-top: 30px;
+    margin-right: 20px;
+    text-align:justify;
 }

@@ -1,7 +1,7 @@
 .artigo01 {
-    border: 4px dashed rgb(23, 33, 2);
+    box-shadow: 2px 2px 8px lightgray;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     max-width: 1200px;
     margin: auto;
     padding: 30px 10px 10px 40px;
@@ -27,7 +27,6 @@ h6 {
 }
 
 input {
-    border: 2px dashed red;
     border: 1px solid #ccc;
     padding: 8px;
     font-family: sans-serif;
@@ -40,7 +39,6 @@ input {
 }
 
 output {
-    border: 1px solid #ccc;
     padding: 8px;
     font-family: sans-serif;
     border-radius: 4px;
@@ -54,9 +52,8 @@ output {
 .api-dolar {
     display: flex;
     flex-flow: row wrap;
-    border: 2px dashed rgb(25, 0, 255);
     padding: 0;
-    max-width: 20vw;
+    max-width: 40vw;
 }
 
 .dolar-container {
@@ -75,9 +72,8 @@ output {
 }
 
 .slides-container-propaganda {
-    border: 2px dashed rgb(0, 255, 26);
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: center;
     width: 600px;
     height: 400px;
@@ -85,8 +81,7 @@ output {
     position: relative;
 }
 
-.slide img{
-    border: 5px dashed rgb(255, 183, 0);
+.slide img {
     width: 100%;
     height: 100%;
     /*elminar os espaços*/
@@ -103,7 +98,19 @@ output {
     transition: opacity 1s ease-in-out;
 }
 
-.slide.active img{
+.slide p {
+
+    opacity: 0;
+    /*transição suave*/
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active img {
+    /*A imagem com a classe 'active' fica visivel*/
+    opacity: 1;
+}
+
+.slide.active p {
     /*A imagem com a classe 'active' fica visivel*/
     opacity: 1;
 }
