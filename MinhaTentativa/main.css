@@ -24,7 +24,7 @@ main {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 300px;
-    border: 2px dashed rgb(133, 223, 16);
+    border: 2px dashed rgb(145, 252, 4);
     margin: 10px;
 }
 

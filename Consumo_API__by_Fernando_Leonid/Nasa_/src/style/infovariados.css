@@ -8,10 +8,10 @@
     display: flex;
     flex-flow: column wrap;
     margin-left: 20px;
-    width: 700px;
-    height: 800px;
+    max-width: 50vh;
     overflow: hidden;
     text-overflow: ellipsis;
+
 
 }
 
@@ -24,7 +24,7 @@
 }
 
 .info-variados img {
-    width: 95%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     display: flex;

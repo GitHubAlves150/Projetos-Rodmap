@@ -23,7 +23,7 @@ function delay(ms) {
 
 
 async function NoticiasNew() {
-     /*const APIKey = '2708f2cc67b64745be4c29e748e7277d';
+     const APIKey = '2708f2cc67b64745be4c29e748e7277d';
      const url = `https://api.worldnewsapi.com/search-news?api-key=${APIKey}&text=tesla`;
      /*  const url= `https://gnews.io/api/v4/search?q=example&apikey=6d6bdcface1b61181abcfbc925d9022f`; */
 
@@ -48,7 +48,7 @@ async function NoticiasNew() {
             IMGlink1.src = data.news[4].image;
             TituloDesc_.textContent = data.news[4].title;
             string = data.news[4].text;
-            NoticeDesc_.textContent = string.slice(0, 300)+ '...';
+            NoticeDesc_.textContent = string.slice(0, 100)+ '...';
             console.log("string..", string);
 
             await delay(2000);
@@ -56,7 +56,7 @@ async function NoticiasNew() {
             IMGlink1.src = data.news[5].image;
             TituloDesc_.textContent = data.news[5].title;
             string = data.news[5].text;
-            NoticeDesc_.textContent = string.slice(0, 300) + '...' ;
+            NoticeDesc_.textContent = string.slice(0, 100) + '...' ;
         }
 
     }
