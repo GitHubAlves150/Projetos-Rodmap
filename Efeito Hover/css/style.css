@@ -1,0 +1,87 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    /*para centralizar*/
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0px;
+
+}
+
+/*o container que agrupa a imagem e o titulo*/
+.jornal_img_container {
+    position: relative;
+    /*crucial para posicionar o titulo de forma absoluta*/
+    width: 300px;
+    /*Defina uma largura fixa para o seu container da imagem*/
+    height: auto;
+    /*A altura será ajustada automaticamente pela imagem*/
+    overflow: hidden;
+    /*Garante que nada vaze para fora do container*/
+    cursor: pointer;
+    /*Muda o cursor para indicar interatividade*/
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    /*Uma sombra leve para destacar*/
+
+}
+
+/*Garante que a imagem preenche o container*/
+.jornal_img_container img {
+    width: 100%;
+    display: block;
+    /*Remove o espaço extra abaixo da imagem*/
+    height: auto;
+    /*Mantém a proporção*/
+    transition: transform 0.3s ease-in-out;
+    /*Adiciona uma transição para um zoom suave*/
+}
+
+/*Estilo para o titulo que aparecerá*/
+.jornal_title {
+    position: absolute;
+    /*Posiciona o titulo em relação ao "Jornal_img_container"*/
+    bottom: 0;
+    /*começa na parte inferior do container*/
+    left: 0;
+    width: 70%;
+    height: 100px;
+    background-color: rgba(119, 118, 118, 0.7);
+    /*Fundo preto semitransparente para o titulo*/
+    color: white;
+    /*cor do texto do titulo*/
+    text-align: center;
+    align-content: center;
+    /*Espaçamento interno do título*/
+    margin-left: 40px;
+    /*Remove margins padrões do h2*/
+
+    /*A parte que deixa invisivel*/
+    opacity: 0;
+    /*O titulo começa invisível*/
+    transform: translateY(1%);
+    /*O titulo comça deslocado para baixo*/
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    /*Transição suave para o efeito de aparecer/deslocar*/
+}
+
+
+/*Efeito/Estilo ao passar o mouse sobre o container*/
+.jornal_img_container:hover .jornal_title {
+    /*O torna visível */
+    opacity: 1;
+    transform: translateY(0);
+    /*O titulo volta para sua posição original(Aparece subindo)*/
+
+}
+
+/*opcional: Efeito de zoom na imagem ao passar o mouse*/
+.jornal_img_container:hover img {
+    transform: scale(1.05);
+    /*Faz a imagem dar um leve zoom*/
+}
