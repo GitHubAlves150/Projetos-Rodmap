@@ -1,0 +1,15 @@
+{
+  "name": "teste-node-vi-starwars",
+  "version": "1.0.0",
+  "description": "API_starwars",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas Alves",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.17.1"
+  }
+}
