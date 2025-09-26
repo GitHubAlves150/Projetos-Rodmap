@@ -1,0 +1,20 @@
+.picture img{
+    width: 300px;
+    height: 400px;
+    border: dashed red 2px;
+}
+
+.Item1{
+    border: solid yellow 2px;
+    height: auto;
+    width: 400px;
+
+}
+
+.container{
+    display: flex;
+    border: solid green 4px;
+    flex-flow:row wrap ;
+    justify-content: center;
+    align-items: center;
+}

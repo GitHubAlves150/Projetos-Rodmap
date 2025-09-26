@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.carousel-container {
+    width: 80%; /* Largura do carrossel */
+    max-height: 200px;
+    max-width: 300px; /* Largura máxima para desktops */
+    position: relative;
+    margin: auto;
+    overflow: hidden; /* Esconde as imagens que estão fora da visualização */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Transição suave de 0.5 segundos */
+}
+
+.carousel-slide img {
+    min-width: 110%; /* Cada imagem ocupa 100% da largura do slide */
+    height: 200px; /* Altura fixa para o carrossel */
+    object-fit: cover; /* Recorta a imagem para preencher o contêiner mantendo a proporção */
+    display: block; /* Remove espaçamento extra abaixo da imagem */
+}
+
+/* Botões de navegação */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.5em;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+/* Indicadores (bolinhas) */
+.carousel-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dot.active {
+    background-color: #333;
+    transform: scale(1.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .carousel-container {
+        width: 95%;
+    }
+    .carousel-slide img {
+        height: 300px; /* Ajusta a altura para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-slide img {
+        height: 200px; /* Altura menor para celulares */
+    }
+    .carousel-btn {
+        padding: 5px 10px;
+        font-size: 1.2em;
+    }
+}

@@ -1,7 +1,6 @@
 'use strict'
 
-const imagem = document.getElementById('_imagem');
-const link = document.getElementById('_link');
+
 
 async function apiLinks() {
     const url = `https://fathomless-hollows-78979-ecc98fbb7725.herokuapp.com`;
@@ -38,6 +37,8 @@ async function apiLinks() {
 
     // Adiciona a imagem como filho do elemento de âncora
     link.appendChild(imagem);
+
+    
 
     // Adiciona o elemento de link (com a imagem dentro) ao div no HTML
     document.getElementById('container-da-imagem').appendChild(link);

@@ -1,8 +1,31 @@
 'use strict'
 
-const imagem = document.getElementById('_imagem');
-const link = document.getElementById('_link');
+function sleep(ms){
+    return new Promise(resolve=> setTimeout(resolve, ms));
+}
 
+const ids = ["adv0", "adv1", "adv2", "adv3", "adv4", "adv5", "adv6", "adv7"];
+
+async function API_ML() {
+    const url = `https://fathomless-hollows-78979-ecc98fbb7725.herokuapp.com`;
+    const response = await fetch(url);
+    const data = await response.json();
+    //document.getElementById("adv0").src= data[1].image_url;
+    for (let c = 0; c < ids.length && c<data.length <8; c++) {
+        const elementos = document.getElementById(ids[c]);
+        if (elementos) {
+            elementos.src = data[c].image_url;
+            
+        }
+        if(!elementos)
+        {
+            alert("opss");
+        }
+    }
+
+}
+//API_ML();
+/*
 async function apiLinks() {
     const url = `https://fathomless-hollows-78979-ecc98fbb7725.herokuapp.com`;
     //const url = 'https://stoic-quotes.com/api/quote';
@@ -39,9 +62,11 @@ async function apiLinks() {
     // Adiciona a imagem como filho do elemento de âncora
     link.appendChild(imagem);
 
+    
+
     // Adiciona o elemento de link (com a imagem dentro) ao div no HTML
     document.getElementById('container-da-imagem').appendChild(link);
 }
 
 
-apiLinks();
+apiLinks();*/

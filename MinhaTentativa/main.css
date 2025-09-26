@@ -13,7 +13,7 @@ main {
 .abordagem_text {
 
     display: flex;
-    flex-flow: row wrap-reverse;
+    flex-flow: row wrap;
     background-color: rgb(173, 170, 170);
     padding: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
