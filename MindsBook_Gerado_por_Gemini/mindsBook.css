@@ -1,0 +1,201 @@
+/* ================================================= */
+/* 1. VARIÁVEIS GLOBAIS (:root) */
+/* ================================================= */
+:root {
+    /* Cores */
+    --cor-primaria: #0077b6; /* Azul Escuro */
+    --cor-fundo: #ffffff;
+    --cor-texto-principal: #333333;
+    --cor-destaque: #f0ad4e; /* Laranja/Amarelo */
+    --cor-fundo-secundario: #f4f4f9;
+
+    /* Fontes (Usando as fontes sugeridas no HTML) */
+    --fonte-titulo: 'Merriweather', serif;
+    --fonte-corpo: 'Roboto', sans-serif;
+    
+    /* Espaçamento */
+    --espacamento-padding: 1rem; /* 16px */
+}
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-corpo);
+    color: var(--cor-texto-principal);
+    background-color: var(--cor-fundo);
+    line-height: 1.6;
+}
+
+/* ================================================= */
+/* 2. TIPOGRAFIA E CABEÇALHO */
+/* ================================================= */
+
+.page-header {
+    background-color: var(--cor-fundo-secundario);
+    padding: 2rem var(--espacamento-padding);
+    text-align: center;
+    border-bottom: 3px solid var(--cor-primaria);
+}
+
+.book-title {
+    font-family: var(--fonte-titulo);
+    font-size: 2.5rem; /* ~40px */
+    color: var(--cor-primaria);
+}
+
+.book-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 300;
+}
+
+/* Citação */
+.site-quote {
+    background-color: #e9ecef;
+    border-left: 5px solid var(--cor-destaque);
+    padding: 1rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+/* Subtítulos */
+.section-intro h2,
+.section-details h2,
+.analysis-subtitle {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-primaria);
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+
+/* ================================================= */
+/* 3. LAYOUT PRINCIPAL (MOBILE-FIRST) */
+/* ================================================= */
+
+.main-content {
+    display: flex;
+    flex-direction: column; /* MOBILE: Tudo é empilhado em uma coluna */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--espacamento-padding);
+}
+
+.main-article {
+    /* Ocupa a largura total no mobile */
+    width: 100%; 
+    padding-right: 0;
+}
+
+.main-article p {
+    margin-bottom: 1rem;
+    padding: 0 5px;
+}
+
+/* ================================================= */
+/* 4. PUBLICIDADE LATERAL (SIDEBAR) */
+/* ================================================= */
+
+.ad-sidebar {
+    /* MOBILE: Fica abaixo do conteúdo principal, VIRA LINHA */
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    border-top: 1px dashed #ccc;
+}
+
+.ad-sidebar h3 {
+    width: 100%; /* O título ocupa toda a largura */
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--cor-destaque);
+}
+
+.ad-item {
+    /* Permite 2 ou 3 itens por linha em telas menores */
+    width: 45%; 
+    max-width: 150px;
+    margin-bottom: 1rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* IMAGENS: Usando object-fit: cover */
+.ad-item img {
+    width: 100%;
+    height: 100px; /* Altura fixa para o corte */
+    display: block;
+    object-fit: cover; /* ESSENCIAL: Preenche sem distorcer e corta o excesso */
+    border-radius: 5px;
+}
+
+
+/* ================================================= */
+/* 5. RODAPÉ */
+/* ================================================= */
+
+.page-footer {
+    background-color: var(--cor-texto-principal);
+    color: var(--cor-fundo);
+    padding: 1.5rem var(--espacamento-padding);
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+.footer-nav a {
+    color: var(--cor-destaque);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* ================================================= */
+/* 6. MEDIA QUERY (DE DESKTOP / MAIOR QUE 768px) */
+/* ================================================= */
+
+@media (min-width: 768px) {
+    
+    .main-content {
+        /* DESKTOP: Ativa o layout de duas colunas */
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+    
+    .main-article {
+        /* A coluna principal ocupa 70% da largura */
+        width: 70%;
+        padding-right: 2rem;
+    }
+
+    .ad-sidebar {
+        /* A sidebar ocupa 30% da largura */
+        width: 30%;
+        
+        /* MUDA: Volta a ser uma coluna empilhada no DESKTOP */
+        flex-direction: column; 
+        
+        /* Remove bordas e margens de mobile */
+        margin-top: 0;
+        border-top: none;
+    }
+    
+    .ad-sidebar h3 {
+        text-align: left;
+    }
+
+    .ad-item {
+        /* Ocupa a largura total do sidebar no DESKTOP */
+        width: 100%; 
+        max-width: none;
+        text-align: left;
+    }
+}
