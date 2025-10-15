@@ -37,7 +37,7 @@ img{
     margin: auto;
 }
 .FlexContent{
-    background-color: lightgray;
+    background-color: rgb(10, 6, 238);
     padding: 20px;
     display: flex;
     flex-flow: column nowrap;

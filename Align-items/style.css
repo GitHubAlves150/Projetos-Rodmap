@@ -1,0 +1,32 @@
+.container {
+    border: red dashed 2px;
+    height: auto;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: start;
+}
+
+.item1,
+.item2,
+.item3 {
+    border: blue dashed 2px;
+    width: 220px;
+}
+
+.item1 {
+    height: 500px;
+    align-self:flex-end;
+
+}
+
+.item2 {
+    height: 200px;
+
+}
+
+.item3 {
+    height: 400px;
+
+}

@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(200, 196, 196);
+
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 80%;
+
+}
+
+section {
+    border: rgb(236, 244, 5) solid 3px;
+    background-color: rgb(131, 149, 248);
+   
+    flex-direction: column;
+    flex-basis: 250px;
+    flex-grow: 1;
+}
+
+ul {
+    margin: 30px;
+}
+
+.salary {
+    border: red dashed 3px;
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    background-color: white;
+}
+
+h3 {
+    background-color: green;
+    padding: 5px;
+    color: white;
+}
+
+section:nth-child(3) h2{
+    background-color: blue;
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Turing: O Pai da Computação | Mentes & Máquinas</title>
+    <link rel="stylesheet" href="turing-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <style>
+        /* ================================================= */
+        /* 1. VARIÁVEIS GLOBAIS (:root) e Reset */
+        /* ================================================= */
+        :root {
+            --cor-primaria: #007AFF;
+            /* Digital Blue - Foco e Confiança */
+            --cor-texto-principal: #212529;
+            --cor-fundo-claro: #f4f4f9;
+            --cor-destaque: #f0ad4e;
+            /* Laranja (opcional para botões) */
+            --font-titulo: 'Merriweather', serif;
+            --font-corpo: 'Roboto', sans-serif;
+            --espacamento-base: 1rem;
+            /* Equivalente a 16px */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-corpo);
+            color: var(--cor-texto-principal);
+            line-height: 1.6;
+            /* Espaçamento ABNT like */
+            font-size: 100%;
+            padding-top: 3rem;
+            /* Espaço para o cabeçalho no desktop */
+        }
+
+        /* ================================================= */
+        /* 2. LAYOUT PRINCIPAL (Mobile-First) */
+        /* ================================================= */
+
+        .page-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            /* Centraliza o container na tela */
+            padding: 0 var(--espacamento-base);
+        }
+
+        .turing-header {
+            text-align: center;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--cor-fundo-claro);
+        }
+
+        .page-title {
+            font-family: var(--font-titulo);
+            color: var(--cor-primaria);
+            font-size: 2.5rem;
+            /* ~40px */
+            margin-bottom: 0.5rem;
+        }
+
+        .page-subtitle {
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: #6c757d;
+        }
+
+        /* Container do Artigo e Imagem */
+        .content-block {
+            display: flex;
+            flex-direction: column;
+            /* MOBILE: Empilha Imagem e Texto */
+            padding: 2rem 0;
+        }
+
+        /* ================================================= */
+        /* 3. COLUNAS NO DESKTOP (Media Query) */
+        /* ================================================= */
+
+        /* Imagem Sidebar */
+        .image-sidebar {
+            width: 100%;
+            /* Ocupa 100% no mobile */
+            margin-bottom: 2rem;
+        }
+
+        .image-box {
+            width: 90%;
+            max-width: 350px;
+            /* Limita o tamanho máximo da foto */
+            margin: 0 auto;
+            /* Centraliza a foto no mobile */
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-box img {
+            /* Regras para Imagem Perfeita (Ocupando o Box Todo) */
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* ESSENCIAL: Preenche sem distorcer, cortando o excesso */
+            display: block;
+        }
+
+        .caption {
+            font-size: 0.85rem;
+            color: #6c757d;
+            padding: 0.5rem;
+            text-align: center;
+            background-color: var(--cor-fundo-claro);
+            margin-top: 0;
+        }
+
+        /* Bloco de Texto Principal */
+        .article-text {
+            width: 100%;
+            /* Ocupa 100% no mobile */
+        }
+
+        .article-text h3 {
+            font-family: var(--font-titulo);
+            color: var(--cor-primaria);
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .article-text p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            padding-right: 5px;
+            /* Pequeno ajuste para telas pequenas */
+        }
+
+        /* ================================================= */
+        /* 4. MEDIA QUERY (Acima de 900px - Ativa Colunas) */
+        /* ================================================= */
+
+        @media (min-width: 900px) {
+
+            .content-block {
+                flex-direction: row;
+                /* DESKTOP: Coloca Imagem e Texto lado a lado */
+                justify-content: space-between;
+            }
+
+            .image-sidebar {
+                /* Define a largura da coluna da imagem (aprox. 30%) */
+                width: 30%;
+                margin-right: 2rem;
+
+                /* Alinha a imagem ao topo da coluna */
+                align-self: flex-start;
+                margin-bottom: 0;
+            }
+
+            .image-box {
+                /* Remove a centralização e ocupa a largura da sidebar */
+                width: 100%;
+                max-width: none;
+            }
+
+            .article-text {
+                /* Define a largura do bloco de texto (aprox. 70%) */
+                width: 65%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main class="page-container">
+
+        <header class="turing-header">
+            <h1 class="page-title">Alan Turing: O Gênio Injustiçado</h1>
+            <h2 class="page-subtitle">O Pai da Computação Moderna e a Origem da Inteligência Artificial.</h2>
+        </header>
+
+        <section class="content-block">
+
+            <aside class="image-sidebar">
+                <div class="image-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Alan_Turing_%281951%29.jpg"
+                        alt="Foto em preto e branco de Alan Turing em 1951, vestindo um casaco.">
+                    <p class="caption">Alan Turing em 1951, anos antes de seu trágico falecimento.</p>
+                </div>
+            </aside>
+
+            <article class="article-text">
+                <h3>Introdução: Um Legado Oculto</h3>
+                <p>Alan Mathison Turing (1912-1954) é amplamente reconhecido como um dos maiores matemáticos do século
+                    XX e a figura central no desenvolvimento da ciência da computação. Seu trabalho conceitual não
+                    apenas formalizou a ideia de algoritmo — a base de todo o software moderno — como também deu origem
+                    ao conceito de "Inteligência Artificial" com o famoso Teste de Turing.</p>
+
+                <h3>A Máquina Quebrou o Código</h3>
+                <p>Durante a Segunda Guerra Mundial, Turing liderou o esforço britânico em Bletchley Park para decifrar
+                    os códigos secretos alemães gerados pela máquina Enigma. Ele projetou máquinas eletromecânicas como
+                    a "Bombe" e, posteriormente, a eletrônica "Colossus", que foram cruciais para a criptoanálise. O
+                    sucesso dessa operação é creditado por muitos historiadores por ter encurtado a guerra em anos e
+                    salvado milhões de vidas.</p>
+
+                <h3>O Preço da Genialidade</h3>
+                <p>Apesar de suas contribuições inestimáveis, Turing nunca foi totalmente reconhecido em vida. Sua
+                    genialidade foi obscurecida pela perseguição: em 1952, ele foi processado por sua homossexualidade
+                    (considerada "indecência" na época). Em vez da prisão, ele escolheu a castração química e viveu seus
+                    últimos anos sob a sombra da humilhação pública. Seu perdão real póstumo só veio em 2013, quase 60
+                    anos após sua morte.</p>
+
+                <h3>A Relevância Perene</h3>
+                <p>Hoje, o legado de Turing está em nossos bolsos e escritórios. Do simples código de um aplicativo até
+                    a complexidade de um agente de IA, tudo carrega a marca de seu trabalho. A Máquina de Turing
+                    continua sendo o modelo teórico que define o que é e o que não é computável, tornando sua figura um
+                    ícone não apenas da tecnologia, mas da luta pela liberdade intelectual e pessoal.</p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer class="page-footer">
+        <p>Publicação original do criador do site. Visite nossa seção de <a href="#">Artigos Científicos</a>.</p>
+    </footer>
+
+</body>
+
+</html>

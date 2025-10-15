@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./arquivo.js" defer></script>
+    <title>Divisão de pagina html</title>
+</head>
+<style>
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+            border: 2px solid #2ecc71;
+            padding: 10px;
+        }
+
+        .caixa-esquerda {
+            /* Define uma largura mínima e permite que ela cresça */
+            width: 70%;
+            background-color: #3498db;
+            height: 150px;
+        }
+
+        .caixa-direita {
+            /* Define uma largura fixa ou base para o item da direita */
+            width: 25%;
+            background-color: #e74c3c;
+            height: 150px;
+        }
+
+        /*
+            Media Query para quando a tela for pequena
+            Você pode ajustar o valor de max-width para o ponto de quebra que preferir
+        */
+        @media (max-width: 600px) {
+            .caixa-esquerda {
+                /* Força a caixa da esquerda a ocupar 100% da largura */
+                width: 100%; 
+                margin-bottom: 10px; /* Adiciona um espaço abaixo */
+            }
+
+            .caixa-direita {
+                /* Força a caixa da direita a ocupar 100% da largura */
+                width: 100%;
+            }
+        }
+    </style>
+<body>
+    <div class="container">
+        <div class="caixa-esquerda">
+            </div>
+        <div class="caixa-direita">
+            </div>
+    </div>
+
+
+</body>
+
+</html>
